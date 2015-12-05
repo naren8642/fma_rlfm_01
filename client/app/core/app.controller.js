@@ -11,7 +11,7 @@
         };
       };
       $scope.main = {
-        brand: 'Flatify',
+        brand: 'RLFM',
         name: 'Lisa Doe'
       };
       return $rootScope.$on("$routeChangeSuccess", function(event, currentRoute, previousRoute) {

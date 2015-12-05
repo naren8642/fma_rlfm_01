@@ -14,8 +14,14 @@
                 'page/404', 'page/500', 'page/blank', 'page/forgot-password', 'page/invoice', 'page/lock-screen', 'page/profile', 'page/invoice', 'page/signin', 'page/signup',
                 'mail/compose', 'mail/inbox', 'mail/single',
                 'app/tasks', 'app/calendar',
+                'search/search',
                 'student/signin', 'student/signup', 'student/demographics', 'student/grit', 'student/pisa'
             ]
+            
+            var lessons = [[1,1]];
+            lessons.forEach(function(lesson){
+                routes.push('lessons/unit'+lesson[0]+'/lesson'+lesson[1])
+            })
 
             setRoutes = function(route) {
                 var config, url;
