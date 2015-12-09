@@ -9,8 +9,8 @@ $link_active_bg:        $sub_nav_bg;
     position: absolute;
     top: $header_height;
     bottom: 0;
-    left: -220px;
-    width: 220px;
+    left: -320px;
+    width: 320px;
     padding: 0;
     background-color: $nav_bg;
     -webkit-overflow-scrolling: touch;
@@ -166,6 +166,11 @@ $link_active_bg:        $sub_nav_bg;
 
                 i.fa-caret-right {
                     margin-right: 25px;
+                }
+                
+                span.fma-lesson-number {
+                    margin-right: 17px;
+                    margin-left: -5px;
                 }
 
                 > .badge {

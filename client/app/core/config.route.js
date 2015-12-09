@@ -15,6 +15,7 @@
                 'mail/compose', 'mail/inbox', 'mail/single',
                 'app/tasks', 'app/calendar',
                 'search/search',
+                'teacher/lessonplan', 'teacher/guide',
                 'student/signin', 'student/signup', 'student/demographics', 'student/grit', 'student/pisa'
             ]
             

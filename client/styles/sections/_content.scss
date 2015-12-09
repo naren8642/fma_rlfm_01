@@ -17,7 +17,7 @@
     @media (min-width:$screen-sm) {
         top: $header_height;
         width: auto;
-        left: 220px;
+        left: 320px;
     }
     // !important, avoid flikering for all pages.
     // @include transition(left .25s ease-in-out);

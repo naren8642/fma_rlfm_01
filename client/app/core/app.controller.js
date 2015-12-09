@@ -10,6 +10,15 @@
           1: -1
         };
       };
+      
+      $scope.setNav = function() {
+        $scope.nav = 'app/layout/nav.html';
+        if ($location.path() === '/teacher/guide') {
+          $scope.nav = 'app/layout/nav-guide.html';
+        }
+        return $scope.nav;
+      };
+      
       $scope.main = {
         brand: 'RLFM',
         name: 'Lisa Doe'
