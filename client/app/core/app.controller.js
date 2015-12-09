@@ -20,7 +20,7 @@
       };
       
       $scope.main = {
-        brand: 'RLFM',
+        brand: 'Real Life Financial Mathematics',
         name: 'Lisa Doe'
       };
       return $rootScope.$on("$routeChangeSuccess", function(event, currentRoute, previousRoute) {

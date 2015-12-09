@@ -30,7 +30,7 @@
         display: none;
         z-index: 11;
         position: absolute;
-        left: 180px;
+        left: 30px;
         top: 10px;
         line-height: 30px;
         font-size: 18px;
@@ -51,7 +51,7 @@
         background-color: $dark;
         @media (min-width: $screen-sm) {
             display: inline-block;
-            width: 220px;
+            width: $navbar-width-default; //320px;
         }
 
         > a {
@@ -126,7 +126,7 @@
         width:100%;
         padding: 60px 0 0;
         @media (min-width: $screen-sm) {
-            padding: 10px 0 0 220px;
+            padding: 10px 0 0 $navbar-width-default; //220px;
         }
 
         // 
