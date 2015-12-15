@@ -27,8 +27,9 @@
               case '/404':
               case '/page/404':
               case '/page/500':
-              case '/page/signin':
-              case '/page/signup':
+              case '/core/welcome':
+              case '/student/signin':
+              case '/teacher/signin':
                 return $element.addClass('body-special');
               case '/page/lock-screen':
                 return $element.addClass('body-special body-lock');

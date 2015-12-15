@@ -15,13 +15,15 @@
                 'mail/compose', 'mail/inbox', 'mail/single',
                 'app/tasks', 'app/calendar',
                 'search/search',
-                'teacher/lessonplan', 'teacher/guide',
+                'core/welcome', 
+                'teacher/signin', 'teacher/lessonplan', 'teacher/guide',
                 'student/signin', 'student/signup', 'student/demographics', 'student/grit', 'student/pisa'
             ]
             
             var lessons = [[1,1]];
             lessons.forEach(function(lesson){
-                routes.push('lessons/unit'+lesson[0]+'/lesson'+lesson[1])
+                routes.push('teacher/lessons/unit'+lesson[0]+'/lesson'+lesson[1]);
+                routes.push('student/lessons/unit'+lesson[0]+'/lesson'+lesson[1]);
             })
 
             setRoutes = function(route) {
@@ -39,8 +41,8 @@
             });
 
             $routeProvider
-                .when('/', {redirectTo: '/dashboard'})
-                .when('/dashboard', {templateUrl: 'app/dashboard/dashboard.html'})
+                .when('/', {redirectTo: '/core/welcome'})
+                .when('/core/welcome', {templateUrl: 'app/core/welcome.html'})
                 .when('/404', {templateUrl: 'app/page/404.html'})
                 .otherwise({ redirectTo: '/404'});
 

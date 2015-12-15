@@ -9,7 +9,7 @@ $link_active_bg:        $sub_nav_bg;
     position: absolute;
     top: $header_height;
     bottom: 0;
-    left: -$navbar-width-default; //-320px;
+    left: (-$navbar-width-default); //-320px;
     width: $navbar-width-default; // 320px;
     padding: 0;
     background-color: $nav_bg;

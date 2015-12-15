@@ -5,14 +5,19 @@
       $scope.isSpecificPage = function() {
         var path, ref, specificPages;
         path = $location.path();
-        specificPages = ['/404', '/page/404', '/page/500', '/page/login', '/page/signin', '/page/signin1', '/page/signin2', '/page/signup', '/page/signup1', '/page/signup2', '/page/lock-screen'];
+        specificPages = ['/core/welcome', '/404', '/page/404', '/page/500', '/page/login', '/student/signin', '/teacher/signin', '/page/signin2', '/page/signup', '/page/signup1', '/page/signup2', '/page/lock-screen'];
         return (ref = specificPages.indexOf(path) >= 0) != null ? ref : {
           1: -1
         };
       };
       
       $scope.setNav = function() {
-        $scope.nav = 'app/layout/nav.html';
+        $scope.nav = 'app/layout/nav-student.html';
+
+        if ($scope.login === 'teacher') {
+          $scope.nav = 'app/layout/nav-teacher.html';
+        }
+        
         if ($location.path() === '/teacher/guide') {
           $scope.nav = 'app/layout/nav-guide.html';
         }
