@@ -11,11 +11,21 @@
         };
       };
       
+      $scope.doLogin = function(type) {
+        $scope.login = type;
+        // set route to /#/{type}/lessons/unit1/lesson1
+        $location.path('app/'+type+'/lessons/unit1/lesson1');
+      }
+            
       $scope.setNav = function() {
         $scope.nav = 'app/layout/nav-student.html';
 
         if ($scope.login === 'teacher') {
           $scope.nav = 'app/layout/nav-teacher.html';
+        }
+        
+        if ($scope.login === 'student') {
+          $scope.nav = 'app/layout/nav-student.html';
         }
         
         if ($location.path() === '/teacher/guide') {
