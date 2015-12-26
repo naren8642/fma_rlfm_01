@@ -13,8 +13,14 @@
       
       $scope.doLogin = function(type) {
         $scope.login = type;
-        // set route to /#/{type}/lessons/unit1/lesson1
-        $location.path('app/'+type+'/lessons/unit1/lesson1');
+        if ($scope.login === 'teacher') {
+          $location.path('teacher/lessonplan');
+        }
+        
+        if ($scope.login === 'student') {
+          $location.path('student/demographics');
+        }
+        
       }
             
       $scope.setNav = function() {
