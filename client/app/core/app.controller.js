@@ -41,8 +41,8 @@
       };
       
       $scope.main = {
-        brand: 'Real Life Financial Mathematics',
-        name: 'Lisa Doe'
+        brand: 'Real Life Mathematics',
+        name: 'Lisa Garcia'
       };
       return $rootScope.$on("$routeChangeSuccess", function(event, currentRoute, previousRoute) {
         return $document.scrollTo(0, 0);
