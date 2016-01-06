@@ -10,36 +10,36 @@
           1: -1
         };
       };
-      
+
       $scope.doLogin = function(type) {
         $scope.login = type;
         if ($scope.login === 'teacher') {
-          $location.path('teacher/lessonplan');
+          $location.path('teacher/guide');
         }
-        
+
         if ($scope.login === 'student') {
           $location.path('student/demographics');
         }
-        
+
       }
-            
+
       $scope.setNav = function() {
         $scope.nav = 'app/layout/nav-student.html';
 
         if ($scope.login === 'teacher') {
           $scope.nav = 'app/layout/nav-teacher.html';
         }
-        
+
         if ($scope.login === 'student') {
           $scope.nav = 'app/layout/nav-student.html';
         }
-        
+
         if ($location.path() === '/teacher/guide') {
           $scope.nav = 'app/layout/nav-guide.html';
         }
         return $scope.nav;
       };
-      
+
       $scope.main = {
         brand: 'Real Life Mathematics',
         name: 'Lisa Garcia'
@@ -54,5 +54,5 @@
       return $scope.salesData = [['Year', 'Sales', 'Expenses'], ['2010', 1000, 400], ['2011', 1170, 460], ['2012', 660, 1120], ['2013', 1030, 540]];
     }
   ]);
-})(); 
+})();
 
